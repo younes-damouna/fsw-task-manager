@@ -1,13 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <title>Tasky</title>
 </head>
+
 <body>
-    
+    <div class="page">
+        <div class="logo">
+            Tasky
+        </div>
+
+        <div class="wrapper">
+            <div class="wrapper-item">
+
+
+                <div class="add-task">
+                    <h2 class="wrapper-item-title">
+                        Create a Task
+                    </h2>
+
+                    <div class="input-group">
+                        <label for="task-name">Task Name</label>
+                        <input type="text" class="task-input" id="task-name">
+                    </div>
+                    <div class="input-group">
+                        <label for="task-color">Task Color</label>
+                        <input type="color" class="task-input" id="task-color">
+                    </div>
+                    <div class="input-group">
+                        <label for="task-date">Task Date</label>
+                        <input type="datetime-local" class="task-input" id="task-date">
+                    </div>
+
+                    <div class="input-group">
+                        <div></div>
+                        <button class="task-input" id="create-task-btn">Create Task</button>
+                    </div>
+                </div>
+                <div class="deleted-tasks">
+                    <h2 class="wrapper-item-title">
+                        Deleted Task
+                    </h2>
+                </div>
+
+            </div>
+            <div class="wrapper-item ">
+                <h2 class="wrapper-item-title ">
+                    Active Tasks
+                </h2>
+
+                <div class="task-cards active-tasks">
+                    <!-- <div class="task-card">
+                        <div class="left-info">
+                            <div class="task-name">Do Math Assignment</div>
+                            <div class="task-date">
+                                Wed Nov 08 2023 20:43:31
+
+                            </div>
+                        </div>
+                        <div class="task-action-btns">
+                            <button class="edit-btn">Edit</button>
+                            <button class="delete-btn">Delete</button>
+                        </div>
+                    </div> -->
+                    
+                </div>
+            </div>
+            <div class="wrapper-item">
+                <h2 class="wrapper-item-title">
+                    Completed Tasks
+                </h2>
+                <div class="task-cards completed-tasks"></div>
+            </div>
+
+        </div>
+
+
+
+    </div>
+
     <script src="./scripts/script.js"></script>
 </body>
+
 </html>
