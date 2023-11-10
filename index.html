@@ -43,8 +43,17 @@
                 </div>
                 <div class="deleted-tasks">
                     <h2 class="wrapper-item-title">
-                        Deleted Task
+                      Search Task
                     </h2>
+                    <div class="input-group">
+                        <label for="task-search"> Task Name</label>
+                        <input type="text" class="task-input" id="task-search">
+                    </div>
+
+                    <div class="input-group">
+                        <div></div>
+                        <button class="task-input" id="search-task-btn">Find Task</button>
+                    </div>
                 </div>
 
             </div>
@@ -53,20 +62,8 @@
                     Active Tasks
                 </h2>
 
-                <div class="task-cards active-tasks">
-                    <!-- <div class="task-card">
-                        <div class="left-info">
-                            <div class="task-name">Do Math Assignment</div>
-                            <div class="task-date">
-                                Wed Nov 08 2023 20:43:31
-
-                            </div>
-                        </div>
-                        <div class="task-action-btns">
-                            <button class="edit-btn">Edit</button>
-                            <button class="delete-btn">Delete</button>
-                        </div>
-                    </div> -->
+                <div class="task-cards active-tasks" id="task-cards-container">
+                    
                     
                 </div>
             </div>
@@ -79,11 +76,49 @@
 
         </div>
 
+        <div class="edit-modal">
+            <div class="modal-body-wrapper">
+                <div class="modal-close" id="close-modal-btn">
+                    <div class="x-finger"></div>
+                </div>
+                <div class="modal-body">
+                   
+                    <div class="input-group">
+                        <label for="task-name">Task Name</label>
+                        <input type="text" class="task-input" id="edit-task-name">
+                    </div>
+                    <!-- <div class="task-action-btns"> -->
+                        <button class="edit-btn " id="save-btn">Save</button>
+                      
+                    <!-- </div> -->
+                </div>
+              
+            </div>
+        </div>
 
+
+        <div class="alert-modal ">
+            <div class="modal-body-wrapper">
+                <div class="modal-close" id="close-modal-alert-btn">
+                    <div class="x-finger"></div>
+                </div>
+                <div class="modal-body text-center">
+                   Error: Input can not be empty!
+                  
+                    <!-- <div class="task-action-btns"> -->
+                        <button class="edit-btn " id="ok-btn">ok</button>
+                      
+                    <!-- </div> -->
+                </div>
+              
+            </div>
+        </div>
 
     </div>
 
-    <script src="./scripts/script.js"></script>
+   
+
+    <script src="./scripts/script.js" defer></script>
 </body>
 
 </html>
