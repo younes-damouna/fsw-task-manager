@@ -12,7 +12,6 @@
   width: 100%;
   height: 100vh;
   padding: 0 50px;
-  /* overflow-y: hidden; */
   position: relative;
 }
 .logo {
@@ -20,7 +19,6 @@
   font-size: 55px;
   width: 100%;
   text-align: center;
-  /* border: 1px solid white; */
   color: lightgray;
 }
 .wrapper {
@@ -31,8 +29,7 @@
   gap: 50px;
   align-items: center;
   justify-content: center;
-  /* margin-top: 20px; */
-  /* border: 1px solid white; */
+ 
 }
 .wrapper-item {
   width: 30%;
@@ -142,7 +139,7 @@ input[type="color" i] {
 }
 .task-cards::-webkit-scrollbar {
   width: 10px;
-  /* display: none; */
+ 
 }
 .task-cards::-webkit-scrollbar-thumb {
   background-color: #123;
@@ -169,8 +166,8 @@ input[type="color" i] {
   box-shadow: var(--shadow);
 }
 .left-info {
-  /* width: 80%; */
-  width: 40%;
+  width: 80%;
+  
 }
 .left-info,
 .task-action-btns {
@@ -249,8 +246,7 @@ input[type="color" i] {
   cursor: pointer;
 }
 .modal-body .edit-btn {
-  /* background-color: red; */
-  /* width: 50%; */
+ 
   padding: 10px;
 }
 .x-finger::after {
@@ -277,14 +273,7 @@ button {
   cursor: pointer;
 }
 
-.task-card > .left-info,
-.task-card > .task-action-btns {
-  /* -webkit-user-select: none;
-        -webkit-touch-callout: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none; */
-}
+
 .task-card .dragged {
   cursor: move;
 }
@@ -293,22 +282,9 @@ button {
 }
 .task-card:hover {
   cursor: move;
-  /* background-color: #1c1c1c; */
+  
 }
-/* .dragged :where(.left-info details, .task-action-btns){
-    opacity: 0;
-    transform: scale(0.9);
-}
-.task-card.dragged{
-    opacity: 0.6;
 
-}
-.task-card:hover{
-    cursor: help;
-}
-.task-card::selection{
-    user-select: none;
-} */
 
 @media only screen and (max-width: 600px) {
     body{
