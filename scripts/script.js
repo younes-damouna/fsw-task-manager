@@ -1,3 +1,7 @@
+
+// Note that I have watched this video https://www.youtube.com/watch?v=jfYWwQrtzzY to learn how to implement the drag and drop,
+// I have changed the variable names as required for my project
+
 // Defining input variables
 let taskName = document.getElementById("task-name")
 let taskColor = document.getElementById("task-color")
